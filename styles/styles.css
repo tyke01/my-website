@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+:root {
+  --transition: all 400ms ease-in-out;
+}
+img {
+  width: 100%;
+  display: block;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.btn {
+  font-size: 1rem;
+  padding: 1rem;
+  background: linear-gradient(
+    to right top,
+    rgba(82, 213, 52, 0.4),
+    rgba(24, 106, 20, 0.4)
+  );
+  border: 1px solid transparent;
+  height: 2.5rem;
+  width: 8rem;
+  border-radius: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition: var(--transition);
+}
+.btn:hover {
+  border-color: white;
+  background: transparent;
+}
+.content-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.background-section {
+  height: 100%;
+  width: 100%;
+  background-image: url(../images/forest-1.jpg);
+  background-position: center;
+  background-size: cover;
+  filter: blur(3px);
+}
+.content {
+  width: 70%;
+  height: 70%;
+  background-image: url(../images/forest-2.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 3px solid white;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.content-text {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  display: flex;
+  align-items: center;
+}
+.content-text h2 {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(4px);
+  height: 99.9%;
+  width: 50%;
+  text-align: center;
+  color: #fff;
+  font-size: 4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  mix-blend-mode: overlay;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+  padding-top: 4rem;
+  padding-left: 5rem;
+  border-top-left-radius: 1.8rem;
+  border-bottom-left-radius: 1.8rem;
+}
+.content-text h1 {
+  font-size: 4rem;
+  position: absolute;
+  top: 4rem;
+  right: 9rem;
+  color: white;
+}
+.content-description {
+  position: absolute;
+  left: 2rem;
+  top: 12rem;
+  color: white;
+  width: 20rem;
+  font-size: 0.7rem;
+}
+.content-description h1 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.travel-journal {
+  position: absolute;
+  left: 2rem;
+  top: 0.5rem;
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 0.8rem;
+}
+.travel-journal:hover i {
+  cursor: pointer;
+}
+.read-more-btn {
+  position: absolute;
+  bottom: 4rem;
+  left: 2rem;
+}
+.decoration{
+  width: 2rem;
+  height: 10rem;
+  background: rgba(0, 0, 0, 0.5);  
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+.square{
+  width: 0.6rem;
+  height: 0.6rem;
+  transform: rotate(45deg);
+  background-color: rgba(255, 255, 255, 0.6);
+}
