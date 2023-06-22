@@ -1,4 +1,4 @@
-const swiper = new Swiper('.content-container', {
+const swiper = new Swiper('.swiper-section', {
     slidesPerView: 1,
     spaceBetween: 20,
     loop: true,
@@ -15,7 +15,7 @@ const swiper = new Swiper('.content-container', {
             slidesPerView: 1
         },
         700: {
-            slidesPerView: 2
+            slidesPerView: 1
         },
         1200: {
             slidesPerView: 1

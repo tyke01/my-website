@@ -40,53 +40,69 @@ body {
   border-color: white;
   background: transparent;
 }
-.content-container {
-  width: 100%;
+/* END OF COMMON STYLES */
+.main{
   height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  z-index: 1;
 }
-.background-section {
-  height: 100%;
+.background-image{
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
   background-image: url(../images/forest-1.jpg);
+  filter: blur(4px);
   background-position: center;
   background-size: cover;
-  filter: blur(3px);
+  z-index: 1;
 }
-.content {
+/* SWIPER JS */
+.swiper-section{
   width: 70%;
   height: 70%;
-  background-image: url(../images/forest-2.jpg);
-  background-size: cover;
-  background-position: center;
-  border: 3px solid white;
+  border: 3px solid #fff;
+  z-index: 3;
   border-radius: 2rem;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  overflow: hidden;
-}
 
-.content-text {
+}
+.swiper-slide{
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  border-radius: 2rem;
+  /* padding: 2rem; */
+ 
+}
+.swiper-slide:nth-child(2){
+  background-color: blue;
+}
+.swiper-slide:nth-child(3){
+  background-color: yellow;
+}
+/* slide-1 */
+.content-wrapper{
+  background-image: url(../images/forest-2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.content-text{
+  position: relative;
   height: 100%;
   width: 100%;
-  position: absolute;
-  left: 0;
-  border-top-left-radius: 2rem;
-  border-bottom-left-radius: 2rem;
-  display: flex;
-  align-items: center;
 }
 .content-text h2 {
   background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(4px);
-  height: 99.9%;
+  height: 100%;
   width: 50%;
   text-align: center;
   color: #fff;
@@ -135,21 +151,25 @@ body {
   bottom: 4rem;
   left: 2rem;
 }
-.decoration{
-  width: 2rem;
-  height: 10rem;
-  background: rgba(0, 0, 0, 0.5);  
-  position: absolute;
-  right: 1rem;
-  top: 50%;
-  transform: translate(0, -50%);
+.swiper-section [class^="swiper-button-"]::after{
+  font-size: 1.5rem;
+  background: rgba(34, 97, 31, 0.6);
+  color: #fff;
   display: flex;
-  justify-content: space-between;
-  padding: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  width: 4rem;
+  border-radius: 4rem;
+  /* position: absolute; */
 }
-.square{
-  width: 0.6rem;
-  height: 0.6rem;
-  transform: rotate(45deg);
-  background-color: rgba(255, 255, 255, 0.6);
+
+.swiper-section .swiper-button-next,
+.swiper-section .swiper-button-prev{
+  position: absolute;
+  right: 2rem;
+  top: 23rem;
+}
+.swiper-section .swiper-button-prev{
+  left:45rem ;
 }
