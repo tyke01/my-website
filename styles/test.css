@@ -50,7 +50,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(../images/forest-1.jpg);
+  background-image: url(../images/forest/forest-1.jpg);
   filter: blur(4px);
   background-position: center;
   background-size: cover;
@@ -81,7 +81,7 @@
 }
 /* slide-1 */
 .content-wrapper{
-  background-image: url(../images/forest-2.jpg);
+  background-image: url(../images/forest/forest-3.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -163,4 +163,30 @@
 }
 .swiper-section .swiper-button-prev{
   left:45rem ;
+}
+.slide-2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border: 1px solid red;
+  padding: 1rem;
+}
+.slide-2 .left-section {
+  width: 50%;
+  height: 100%;
+}
+.slide-2 .right-section{
+  width: 50%;
+  height: 100%;
+}
+.swiper-container-v{
+  height: 100%;
+}
+.slide-2 .swiper-wrapper{
+  height: 100%;
+  border: 2px solid white;
+}
+.slide-2 .swiper-slide{
+  height: 100%;
 }

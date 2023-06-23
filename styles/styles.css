@@ -41,7 +41,7 @@ body {
   background: transparent;
 }
 /* END OF COMMON STYLES */
-.main{
+.main {
   height: 100vh;
   width: 100%;
   display: flex;
@@ -53,48 +53,41 @@ body {
   position: relative;
   z-index: 1;
 }
-.background-image{
+.background-image {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(../images/forest-1.jpg);
+  background-image: url(../images/forest/forest-1.jpg);
   filter: blur(4px);
   background-position: center;
   background-size: cover;
   z-index: 1;
 }
 /* SWIPER JS */
-.swiper-section{
+.swiper-section {
   width: 70%;
   height: 70%;
   border: 3px solid #fff;
   z-index: 3;
   border-radius: 2rem;
-
 }
-.swiper-slide{
+.swiper-slide {
   width: 100%;
   height: 100%;
-  background-color: red;
   border-radius: 2rem;
-  /* padding: 2rem; */
- 
 }
-.swiper-slide:nth-child(2){
-  background-color: blue;
-}
-.swiper-slide:nth-child(3){
+.swiper-slide:nth-child(3) {
   background-color: yellow;
 }
 /* slide-1 */
-.content-wrapper{
-  background-image: url(../images/forest-2.jpg);
+.content-wrapper {
+  background-image: url(../images/forest/forest-2.jpg);
   background-position: center;
   background-size: cover;
 }
-.content-text{
+.content-text {
   position: relative;
   height: 100%;
   width: 100%;
@@ -151,25 +144,93 @@ body {
   bottom: 4rem;
   left: 2rem;
 }
-.swiper-section [class^="swiper-button-"]::after{
+.swiper-section [class^="swiper-button-"]::after {
   font-size: 1.5rem;
   background: rgba(34, 97, 31, 0.6);
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 2rem;
-  width: 4rem;
-  border-radius: 4rem;
-  /* position: absolute; */
+  height: 2.5rem;
+  width: 5rem;
+  border-radius: 0.5rem;
 }
 
 .swiper-section .swiper-button-next,
-.swiper-section .swiper-button-prev{
+.swiper-section .swiper-button-prev {
   position: absolute;
   right: 2rem;
   top: 23rem;
+  width: 3rem;
 }
-.swiper-section .swiper-button-prev{
-  left:45rem ;
+.swiper-section .swiper-button-prev {
+  left: 45rem;
 }
+/* slide 2 */
+.slide-2 {
+  padding: 1rem;
+  background: linear-gradient(
+    to right top,
+    rgba(44, 44, 44, 0.5),
+    rgba(164, 163, 163, 0.6)
+  );
+}
+.slide-2-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  height: 20rem;
+}
+
+.grid-container {
+  border: 1px solid rgba(24, 106, 20, 0.8);
+  height: 100%;
+  padding: 1rem 0.5rem;
+  border-radius: 1rem;
+  color: #fff;
+  width: 50%;
+}
+.slide-2 .left-section {
+  background-image: url(../images/forest/forest-5.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.sld2-readmore-btn {
+  margin-top: 2rem;
+}
+.right-section{
+  padding: 0.2rem;
+}
+.service{
+  height: 5rem;
+  margin-bottom: 0.6rem;
+}
+
+.service p,
+.service h3 {
+  font-size: 0.7rem;
+}
+.service h3 {
+  width: 8rem;
+  text-decoration: underline;
+}
+.service p{
+  font-size: 1rem;
+  margin-bottom: 1.3rem;
+}
+.ser-1{
+  display: flex;
+  align-items: center;
+}
+.ser-1 img{
+  width: 8rem;
+  height: auto;
+  border-radius: 10px;
+  transition: var(--transition);
+
+}
+.ser-1 img:hover{
+  transform: scale(1.05);
+}
+/* slide 3 */

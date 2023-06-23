@@ -1,4 +1,5 @@
-const swiper = new Swiper('.content-container', {
+const swiper1 = new Swiper('.swiper-section', {
+
     slidesPerView: 1,
     spaceBetween: 20,
     loop: true,
@@ -24,5 +25,7 @@ const swiper = new Swiper('.content-container', {
     keyboard: {
         enabled: true,
         onlyInViewport: false,
-    }
+    },
 });
+
+/* second swiper */
